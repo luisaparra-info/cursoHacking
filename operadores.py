@@ -66,9 +66,9 @@ print(a // c)
 # Modulo, Divide el operando de la izquierda por el
 # operador del lado derecho y devuelve el resto.
 print(7 % 3)
-
-#OERADORES RELACIONALES
-
+###############################
+#    OERADORES RELACIONALES   #
+###############################
 a, b, a1, b1, c1 = 5, 5, 7, 3, 3
 cadena1, cadena2 = 'Hola', 'Adiós'
 lista1, lista2 = [1, 'Lista Python', 23], [11, 'Lista Python', 23]
@@ -105,3 +105,18 @@ print (h)
 # Mayor o igual que
 g = b1 >= c1
 print (g)
+
+###############################
+#    OERADORES LÓGICOS        #
+###############################
+# and
+# or
+# not
+
+print(1>0 and 1>1)
+print(1>2 or 2>5)
+print(not True)
+
+###############################
+#    ENTRADA DE DATOS         #
+###############################
