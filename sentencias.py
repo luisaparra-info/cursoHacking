@@ -1,6 +1,5 @@
 # sentencia IF
 
-
 f = 3
 h = 2
 if (f == h):

@@ -113,7 +113,15 @@ print (g)
 # or
 # not
 
+
+# and
 print(1>0 and 1>1)
+print(1>0 & 1>1)
+
+# or
 print(1>2 or 2>5)
+print(1>2 | 2>5)
+# not
 print(not True)
+
 
