@@ -1,7 +1,4 @@
 # sentencia IF
-"""
-  esta es una prueba de push
-"""
 
 f = 3
 h = 2
