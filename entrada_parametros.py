@@ -6,6 +6,7 @@ media = 0
 ## Hacemos la suma de todos los elementos
 #El elemento 0 lo saltamos
 #pues es el nombre del script
+#esto es una prueba
 try:
     for i in range(1, nelementos):
         suma += float(sys.argv[i])
