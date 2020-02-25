@@ -124,4 +124,3 @@ print(1>2 | 2>5)
 # not
 print(not True)
 
-
