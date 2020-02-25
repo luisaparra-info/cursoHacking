@@ -12,6 +12,7 @@ def read_int(msg):
     except:
         return read_int('El dato introducido no es correcto, vuelva a intentarlo \n> ')
 
+print(read_int("Introduce un entero: "))
 
 def multi_read():
     data = []
