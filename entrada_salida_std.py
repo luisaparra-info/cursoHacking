@@ -1,6 +1,7 @@
 ###############################
 #    ENTRADA ESTANDAR         #
 ###############################
+"""
 nombre = input("Escribe tu nombre: ")
 edad = int(input("Escribe tu edad: "))
 print("Hola {}, tu edad es {} y el doble de tu edad es {}. ".format(nombre, edad, edad * 2))
@@ -26,13 +27,14 @@ def multi_read():
 print(multi_read())
 
 #ver entrada_parametros.py
-
+"""
 ###############################
 #    SALIDA  ESTANDAR         #
 ###############################
 # sustituye en valor /n por el valor que especifiquemos
 for i in range(5):
-    print(i, end='')
+    print(i, end='\t')
+print('\n')
 
 print("Cuesta", 3, "euros")
 try:
@@ -66,7 +68,7 @@ for x in range(1,11):
 
 #Crear una tabla de enteros (d)
 for x in range(1,11):
-    print('{0:2d} {1:4d} {2:4d}'.format(x, x * x, x * x * x))
+    print('{0:2d} {1:3d} {2:4d}'.format(x, x * x, x * x * x))
     #Indicamos el tipo de elemento y el número de caracteres
 
 print('12'.zfill(5))
