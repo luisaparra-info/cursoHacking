@@ -1,4 +1,4 @@
-class Calculadora:
+class Calculadora2:
     # iniciamos con el método __init__
     def __init__(self, valor1 = 0, valor2 = 0):
         self._valor1 = valor1
@@ -46,7 +46,8 @@ class Calculadora:
 
 
 # bloque principal
-calcular = Calculadora(10, 5)
+calcular = Calculadora2(10, 5)
+calcular._valor2
 calcular.imprimir()
 calcular.suma()
 calcular.resta()

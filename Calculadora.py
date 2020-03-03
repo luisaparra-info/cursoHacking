@@ -1,3 +1,4 @@
+
 class Calculadora:
     # iniciamos con el método __init__
     def __init__(self):
@@ -38,3 +39,6 @@ calcular.suma()
 calcular.resta()
 calcular.multiplicacion()
 calcular.division()
+
+cal2 = Calculadora2.Calculadora2(4,7)
+
