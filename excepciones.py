@@ -44,12 +44,14 @@ def excepciones_identificadas(numero):
     try:
         numero = float(numero)
         print("La raíz cuadrada del número %f es %f" % (numero, numero ** 0.5))
+
     except TypeError:
         ocurre_error = True
         print("Ocurrió un error previsto.")
     except:
         ocurre_error = True
         print("¡No sé qué pasó!")
+
     if ocurre_error:
         print("ERROR.")
     else:
@@ -82,11 +84,11 @@ def excepciones_descritas(numero):
     else:
         print("OK.")
 
-    print("Batería de pruebas excepciones_descritas");
-    excepciones_descritas(-1)
-    excepciones_descritas(13j)
-    excepciones_descritas("Hola")
-    excepciones_descritas("15")
+print("Batería de pruebas excepciones_descritas");
+excepciones_descritas(-1)
+excepciones_descritas(13j)
+excepciones_descritas("Hola")
+excepciones_descritas("15")
 
 
 def excepciones_atrapadas(numero):
@@ -168,3 +170,16 @@ def condiciona():
             print("Exacto.")
             break
 condiciona()
+
+def jerarquia_excepciones():
+    try:
+        a = 3/0
+
+    except ZeroDivisionError:
+        print('ZeroDivisionError: ')
+    except ArithmeticError:
+        print('ArithmeticError')
+    except:
+        print('No sé que pasó')
+
+jerarquia_excepciones()

@@ -1,6 +1,7 @@
 import sys
 ## Variables
 nelementos = len(sys.argv)
+
 suma = 0
 media = 0
 ## Hacemos la suma de todos los elementos
