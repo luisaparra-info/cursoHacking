@@ -48,19 +48,15 @@ class PlazoFijo(Cuenta):
         self.ganancia()
 
 class MiCajaAhorroFija(CajaAhorro, PlazoFijo):
-    def __init__(self,titular,cantidad,plazo,interes):
-        CajaAhorro.__init__(self,titular,cantidad,interes)
-        PlazoFijo.__init__(self,titular,cantidad,plazo,interes)
+    def __init__(self, titular, cantidad, plazo, interes):
+        CajaAhorro.__init__(self, titular, cantidad, interes)
+        PlazoFijo.__init__(self, titular, cantidad, plazo, interes)
     def imprimir(self):
         print("MiCajaAhorroFija")
         CajaAhorro.imprimir(self)
         PlazoFijo.imprimir(self)
 
 
-
-
-
-
 af = MiCajaAhorroFija("Isabel", 8000, 365, 1.2)
 af.imprimir()
-print("Interes: ",af.interes)
+print("Interes: ", af.interes)
