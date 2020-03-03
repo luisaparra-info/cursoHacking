@@ -12,5 +12,7 @@ with open('data.json') as file:
         print('')
 
 
-resp = requests.get('http://ip-api.com/json/208.80.152.201')
-json.loads(resp.content)
+resp = requests.get('http://ip-api.com/json/88.26.236.2')
+data= json.loads(resp.content)
+print(data["status"])
+print(data["city"])
