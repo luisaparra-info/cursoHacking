@@ -15,14 +15,12 @@ class Cuenta:
 # esta clase hereda atributos de la clase Cuenta
 class CajaAhorro(Cuenta):
     # iniciamos los atributos de la clase
-    def __init__(self, titular, cantidad, interes):
+    def __init__(self, titular, cantidad):
         super().__init__(titular, cantidad)
-        self.interes = interes
     # imprimimos los datos de la cuenta
     def imprimir(self):
         print("Cuenta de caja de ahorros")
         super().imprimir()
-        print("Tipo de interés: ", self.interes)
 
 
 # creamos la clase PlazoFijo
@@ -48,9 +46,9 @@ class PlazoFijo(Cuenta):
         self.ganancia()
 
 class MiCajaAhorroFija(CajaAhorro, PlazoFijo):
-    def __init__(self,titular,cantidad,plazo,interes):
-        CajaAhorro.__init__(self,titular,cantidad,interes)
-        PlazoFijo.__init__(self,titular,cantidad,plazo,interes)
+    def __init__(self, titular, cantidad, plazo, interes):
+        CajaAhorro.__init__(self, titular, cantidad)
+        PlazoFijo.__init__(self, titular, cantidad, plazo, interes)
     def imprimir(self):
         print("MiCajaAhorroFija")
         CajaAhorro.imprimir(self)
@@ -62,5 +60,4 @@ class MiCajaAhorroFija(CajaAhorro, PlazoFijo):
 
 
 af = MiCajaAhorroFija("Isabel", 8000, 365, 1.2)
-af.imprimir()
-print("Interes: ",af.interes)
+
