@@ -19,8 +19,8 @@ def main():
         bus.addheaders = [('User-agent', 'Safari')]
         bus.open("https://www.google.com")
 
-        # for n in bus.forms():
-        #    print(n)
+        for n in bus.forms():
+            print(n)
 
         # posición del formulario que va a recibir los datos
         bus.select_form(nr=0)
