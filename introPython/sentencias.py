@@ -3,16 +3,16 @@
 f = 3
 h = 2
 if (f == h):
-    print('los numeros son iguales')
+    print('Los numeros son iguales')
 else:
-    print('los numeros NO son iguales')
+    print('Los numeros NO son iguales')
 
 # IF anidado
-num = int(input('escribe un numero'))
+num = int(input('Escribe un numero: '))
 
-if num < 0: print(' numero negativo')
-elif num == 0: print('el numero es 0')
-elif num > 0: print('el numero es 4positivo')
+if num < 0: print(' Numero negativo')
+elif num == 0: print('El numero es 0')
+elif num > 0: print('El numero es positivo')
 
 # sentencia WHILE
 
@@ -24,7 +24,7 @@ num=1
 while (sum<=10):
   sum=num+sum
   num=num+1
-  print('La suma es ' +str(sum))
+  print('La suma es ' + str(sum))
 
 
 print('While controlado con Evento')
