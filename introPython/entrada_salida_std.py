@@ -1,7 +1,7 @@
 ###############################
 #    ENTRADA ESTANDAR         #
 ###############################
-"""
+
 nombre = input("Escribe tu nombre: ")
 edad = int(input("Escribe tu edad: "))
 print("Hola {}, tu edad es {} y el doble de tu edad es {}. ".format(nombre, edad, edad * 2))
@@ -27,7 +27,7 @@ def multi_read():
 print(multi_read())
 
 #ver entrada_parametros.py
-"""
+
 ###############################
 #    SALIDA  ESTANDAR         #
 ###############################
