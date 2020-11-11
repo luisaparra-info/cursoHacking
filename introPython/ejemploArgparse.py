@@ -34,8 +34,8 @@ def Main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-s", "--suma", help="Realiza la suma de los dos operandos", action="store_true")
     group.add_argument("-r", "--resta", help="Realiza la resta de los dos operandos", action="store_true")
-    group.add_argument("-d", "--división", help="Realiza la división de los dos operandos", action="store_true")
-    group.add_argument("-m", "--fmulti", help="Realiza la multimplicación de los dos operandos", action="store_true")
+    group.add_argument("-d", "--division", help="Realiza la división de los dos operandos", action="store_true")
+    group.add_argument("-m", "--multiplica", help="Realiza la multimplicación de los dos operandos", action="store_true")
 
 
     args = parser.parse_args()
@@ -43,11 +43,11 @@ def Main():
     # Optional arguments
     if args.suma:
         print("El resultado de sumar {} y {} es {}".format(args.num1, args.num2, (add(args.num1, args.num2))))
-    elif args.fsub:
+    elif args.resta:
         print("El resultado de sumar {} y {} es {}".format(args.num1, args.num2, (sub(args.num1, args.num2))))
-    elif args.fdiv:
+    elif args.division:
         print("El resultado de sumar {} y {} es {}".format(args.num1, args.num2, (div(args.num1, args.num2))))
-    elif args.fmulti:
+    elif args.multiplica:
         print("El resultado de sumar {} y {} es {}".format(args.num1, args.num2, (multi(args.num1, args.num2))))
     else:
         print("Error: Es necesario indicar la operación a realizar")
